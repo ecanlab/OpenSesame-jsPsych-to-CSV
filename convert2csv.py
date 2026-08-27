@@ -191,11 +191,11 @@ def write_to_csv(data: list[dict|list], output_file: str, keys: dict[str, Any]):
 
     keys (dict[str, Any]): Dictornary with variables as keys and an empty value.
 
-    Pre: `data` need to follow either Opensesame or jsPsych data structure.
+  Pre: `data` need to follow either Opensesame or jsPsych data structure.
          The directory containing `outputFile` must be writable.
 
-    Returns: None
-    """
+  Returns: None
+  """
   try:
     with open(output_file, "w", newline="", encoding="UTF-8") as csvfile:
 
